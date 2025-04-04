@@ -26,8 +26,10 @@ RUN chmod +x run.sh && \
     chmod +x kafka_2.12-3.7.2/bin/*.sh
 
 # Exponer puertos
-EXPOSE 8000  # Para FastAPI
-EXPOSE 9092  # Para Kafka
+# Fast Api
+EXPOSE 8000
+# Kafka
+EXPOSE 9092  
 
 # Comando de inicio
 CMD ["bash", "./run.sh"]
